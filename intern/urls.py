@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^writeForm/$', views.writeForm),
     url(r'^doWrite/$', views.doWrite),
     url(r'^mainPageWork/$', views.mainPageWork),
+    url(r'^readPage/$',views.readPage),
 ]

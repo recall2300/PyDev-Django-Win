@@ -27,7 +27,7 @@
               <td width=100><p align=center>{{ boardRow.name }}</p></td>
               <td width=320>
                   <p align=center>
-                      <a href="/read?memo_id={{ boardRow.id }}&current_page={{ current_page }}&searchStr=None" title="{{ boardRow.memo}}">{{ boardRow.subject }}
+                      <a href="/readPage?memo_id={{ boardRow.id }}&current_page={{ current_page }}&searchStr=None" title="{{ boardRow.memo}}">{{ boardRow.subject }}
                   </p>
               </td>
               <td width=100><p align=center>{{ boardRow.created_date }}</p></td>
@@ -43,7 +43,7 @@
   <table cellspacing=1 width=700 border=1 >
       <tr> <td>
           {% for page in totalPageList %}
-              <a href="/listSpecificPageWork?current_page={{page}}" >
+              <a href="/mainPageWorkPage?current_page={{page}}" >
               [
               {% ifequal page current_page %}
                   <b>
