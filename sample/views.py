@@ -7,7 +7,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponseRedirect
 
 # Create your views here.
-
 rowsPerPage = 2
 
 def home(request):
@@ -32,8 +31,8 @@ def home(request):
 def home2(request):
     return render_to_response('mainPage2.html')
 
-#def writeForm(request):
-    #return 
+def writeForm(request):
+    return render_to_response('writeForm.html')
 
 class pagingHelper:
     "paging helper class"

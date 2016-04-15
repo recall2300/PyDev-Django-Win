@@ -20,4 +20,5 @@ from sample import views
 urlpatterns = [
     url(r'^$', views.home),
     url(r'^home2/$', views.home2),
+    url(r'^writeForm/$', views.writeForm),
 ]
