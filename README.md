@@ -1,0 +1,43 @@
+# PyDev-Django-Win
+
+- Windows 7 64bit
+- MySQL
+- Eclipse - PyDev
+- Python 2.7.11
+- Django 1.8.3
+
+- pip freeze
+  - daemonize==2.4.4
+  - Django==1.8.3
+  - django-cors-headers==1.1.0
+  - django-rest-swagger==0.3.3
+  - djangorestframework==2.4.4
+  - ecdsa==0.13
+  - elementtree==1.2.6.post20050316
+  - httplib2==0.9
+  - Jinja2==2.8
+  - junos-eznc==1.2.3
+  - libsnmp==2.0.5
+  - List==1.3.0
+  - lxml==3.4.4
+  - MarkupSafe==0.23
+  - mysql-python==1.2.5
+  - ncclient==0.4.3
+  - netaddr==0.7.18
+  - paramiko==1.16.0
+  - ply==3.8
+  - pyasn1==0.1.9
+  - pycrypto==2.6
+  - pycurl==7.43.0
+  - pysmi==0.0.6
+  - pysnmp==4.3.1
+  - python-memcached==1.57
+  - pytz==2014.10
+  - PyYAML==3.11
+  - requests==2.4.3
+  - scp==0.10.2
+  - simple-crypt==4.1.7
+  - simplejson==3.6.5
+  - six==1.10.0
+  - urllib3==1.14
+  - XlsxWriter==0.6.4
