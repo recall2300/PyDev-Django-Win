@@ -23,5 +23,8 @@ urlpatterns = [
     url(r'^writeForm/$', views.writeForm),
     url(r'^doWrite/$', views.doWrite),
     url(r'^mainPageWork/$', views.mainPageWork),
-    url(r'^readPage/$',views.readPage),
+    url(r'^readPage/$', views.readPage),
+    url(r'^mainPageSearchWork/$', views.mainPageSearchWork),
+    url(r'^updateMainPageWork/$', views.updateMainPageWork),
+    url(r'^updateList/$', views.updateList),
 ]

@@ -11,12 +11,12 @@
           if(s=="None")
               location.href = '/mainPageWork?current_page={{current_page}}';
           else
-              location.href = '/listSearchedSpecificPageWork?pageForView={{current_page}}&searchStr={{searchStr}}';
+              location.href = '/mainPageSearchWork?pageForView={{current_page}}&searchStr={{searchStr}}';
       }
 
       function boardmodify()
       {
-          location.href='/listSpecificPageWork_to_update?memo_id={{memo_id}}&current_page={{current_page}}&searchStr={{searchStr}}';
+          location.href='/updateMainPageWork?memo_id={{memo_id}}&current_page={{current_page}}&searchStr={{searchStr}}';
       }
 
       function boarddelete()
