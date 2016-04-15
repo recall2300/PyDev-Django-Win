@@ -106,6 +106,7 @@ def mainPageSearchWork(request):
     # Raw SQL에 like 구문 적용방법.. 이 방법 찾다가 삽질 좀 했다.
     boardList = DjangoBoard.objects.raw('select id, subject, name, created_date, mail, memo,hits from sample_djangoboard where subject like %s order by id desc limit %s, %s', [searchStr,(pageForView-1)*rowsPerPage, rowsPerPage])
     searchStr = searchStr.replace("%","")
+    
     return render_to_response('mainPageSearch.html', {'boardList': boardList, 'totalCnt': totalCnt, 'pageForView':pageForView ,'searchStr':searchStr, 'totalPageList':totalPageList} )
 
 def updateMainPageWork(request):
@@ -154,6 +155,14 @@ def deletePage(request):
         print 'current_page--'
 
     url = '/mainPageWork?current_page=' + str(current_page)
+    return HttpResponseRedirect(url)
+
+@csrf_exempt
+def searchPage(request):
+    searchStr = request.POST['searchStr']
+    print 'searchStr', searchStr
+
+    url = '/mainPageSearchWork?searchStr=' + searchStr +'&pageForView=1'
     return HttpResponseRedirect(url)
 
 class pagingHelper:
