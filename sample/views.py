@@ -184,3 +184,7 @@ class pagingHelper:
     def __init__(self):
         self.total_pages = 0
         self.totalPageList = 0
+
+
+def xmasmain(request):
+    return render_to_response('main.html')

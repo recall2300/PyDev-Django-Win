@@ -29,4 +29,6 @@ urlpatterns = [
     url(r'^updateList/$', views.updateList),
     url(r'^deletePage/$', views.deletePage),
     url(r'^searchPage/$', views.searchPage),
+    
+    url(r'^main/$', views.xmasmain),
 ]
