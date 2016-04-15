@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^mainPageSearchWork/$', views.mainPageSearchWork),
     url(r'^updateMainPageWork/$', views.updateMainPageWork),
     url(r'^updateList/$', views.updateList),
+    url(r'^deletePage/$', views.deletePage),
 ]

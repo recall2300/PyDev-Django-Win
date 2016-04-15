@@ -132,6 +132,30 @@ def updateList(request):
     url = '/mainPageWork?current_page=' + str(current_page)
     return HttpResponseRedirect(url)
 
+def deletePage(request):
+    memo_id = request.GET['memo_id']
+    current_page = request.GET['current_page']
+
+    p = DjangoBoard.objects.get(id=memo_id)
+    p.delete()
+   
+    # 마지막 메모를 삭제하는 경우, 페이지를 하나 줄임.
+    totalCnt = DjangoBoard.objects.all().count()
+    pagingHelperIns = pagingHelper();
+
+    totalPageList = pagingHelperIns.getTotalPageList( totalCnt, rowsPerPage)
+    print 'totalPages', totalPageList
+
+    if( int(current_page) in totalPageList):
+        print 'current_page No Change'
+        current_page=current_page
+    else:
+        current_page= int(current_page)-1
+        print 'current_page--'
+
+    url = '/mainPageWork?current_page=' + str(current_page)
+    return HttpResponseRedirect(url)
+
 class pagingHelper:
     "paging helper class"
     def getTotalPageList(self, total_cnt, rowsPerPage):
