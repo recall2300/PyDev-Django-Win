@@ -3,17 +3,17 @@
 		var form = document.writeform;
 
 		if (!form.name.value) {
-			alert("ÀÌ¸§À» Àû¾îÁÖ¼¼¿ä");
+			alert("ì´ë¦„ì„ ì ì–´ì£¼ì„¸ìš”");
 			form.name.focus();
 			return;
 		}
 		if (!form.subject.value) {
-			alert("Á¦¸ñÀ» Àû¾îÁÖ¼¼¿ä");
+			alert("ì œëª©ì„ ì ì–´ì£¼ì„¸ìš”");
 			form.subject.focus();
 			return;
 		}
 		if (!form.memo.value) {
-			alert("³»¿ëÀ» Àû¾îÁÖ¼¼¿ä");
+			alert("ë‚´ìš©ì„ ì ì–´ì£¼ì„¸ìš”");
 			form.memo.focus();
 			return;
 		}
@@ -23,25 +23,25 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>°Ô½ÃÆÇ ±Û¾²±â</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ê²Œì‹œíŒ ê¸€ì“°ê¸°</title>
 </head>
 <table width=700 border=1 cellspacing=0 cellpadding=5>
-	<form name=writeform method=post action="/DoWriteBoard/">
+	<form name=writeform method=post action="/doWrite/">
 		<tr>
-			<td><b>ÀÌ¸§</b></td>
+			<td><b>ì´ë¦„</b></td>
 			<td><input type=text name=name size=50 maxlength=50></td>
 		</tr>
 		<tr>
-			<td><b>ÀÌ¸ŞÀÏ</b></td>
+			<td><b>ì´ë©”ì¼</b></td>
 			<td><input type=text name=email size=50 maxlength=50></td>
 		</tr>
 		<tr>
-			<td><b>Á¦¸ñ</b></td>
+			<td><b>ì œëª©</b></td>
 			<td><input type=text name=subject size=50 maxlength=50></td>
 		</tr>
 		<tr>
-			<td><b>³»¿ë</b></td>
+			<td><b>ë‚´ìš©</b></td>
 			<td><textarea name=memo cols=50 rows=10></textarea></td>
 		</tr>
 	</form>
@@ -49,7 +49,7 @@
 
 <table width=700 border=1 cellspacing=0 cellpadding=0>
 	<tr>
-		<td><input type=button value="µî·Ï"
+		<td><input type=button value="ë“±ë¡"
 			OnClick="javascript:writeCheck();"></td>
 	</tr>
 </table>

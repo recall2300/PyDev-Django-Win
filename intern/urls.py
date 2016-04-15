@@ -21,4 +21,6 @@ urlpatterns = [
     url(r'^$', views.home),
     url(r'^home2/$', views.home2),
     url(r'^writeForm/$', views.writeForm),
+    url(r'^doWrite/$', views.doWrite),
+    url(r'^mainPageWork/$', views.mainPageWork),
 ]
